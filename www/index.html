@@ -201,20 +201,23 @@
 				bottom: 0;
 				text-align: center;
 				overflow: auto;
-			    transition: all 500ms cubic-bezier(0.085, 0.310, 0.000, 0.975);
+			    transition: .5s cubic-bezier(.12,.6,0,1);
 				z-index: 99;
 				backface-visibility: hidden;
 				transform: translateY(0vh);
 				display: flex;
 				align-items: flex-end;
+				color: white;
+				font-size: 3vh;
 			}
 
 			div.janela > div {
-				background-color: #A9A9A9;
-				width: 100vw;
-				height: 100vw;
+				background-color: #404049;
+				width: 85vw;
+				height: 85vw;
 				border-radius: 999px;
 				justify-content: center;
+				margin: 0 auto;
 			}
 
 			div.janela > div > img{
@@ -223,13 +226,12 @@
 			}
 
 			div.janela.fechado{
-				/*transform: translate3d(0%, 100%, 0);*/
 				transform: translateY(100vh);
 			}
 
 			div.janela img{
-				width: 35vh;
-				padding: 5vh;
+				width: 30vh;
+				padding: 2vh;
 				background-repeat: no-repeat;
 
 			}
@@ -239,19 +241,6 @@
 					-webkit-transform: rotate(360deg); transform:rotate(360deg); 
 					} 
 				}
-
-			main div p.atdoem{
-				margin-bottom:.5vh;
-				font-size: 4vh;
-			}
-			main div p.atdoem2{
-				font-size: 4vh;
-				justify-content: center;
-			}
-
-			div.rato{
-				
-			}
 
 
 
@@ -425,9 +414,9 @@
 
 		<div class="janela fechado">
 			<div class="rato">
-				<p class="atdoem">Gravando...</p><br>
+				<p>Gravando...</p><br>
 				<img src="assets/images/vinyl2.png"><br>
-				<p class="atdoem2">00:00:00</p>
+				<p>00:00:00</p>
 			</div>
 		</div>
 
